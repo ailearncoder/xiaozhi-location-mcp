@@ -1,0 +1,26 @@
+[project]
+name = "xiaozhi-location-mcp"
+version = "0.1.6"
+description = "获取当前位置"
+readme = "README.md"
+authors = [
+    { name = "panxuesen", email = "panxuesen520@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "fastmcp>=2.5.1",
+    "xiaozhi-app>=0.1.0",
+]
+
+[project.scripts]
+xiaozhi-location-mcp = "xiaozhi_location_mcp:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[[tool.uv.index]]
+url = "https://pypi.mac.axyz.cc:30923/simple"
+
+[[tool.uv.index]]
+url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
